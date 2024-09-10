@@ -2,7 +2,6 @@
 
 
 
-<?php get_header(); ?>
 
 <?php echo do_shortcode("[mv_imagetext/]"); ?>
 <?php
