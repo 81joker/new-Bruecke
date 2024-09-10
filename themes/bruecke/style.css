@@ -1,0 +1,37 @@
+/*
+Theme Name: bruecke
+Theme URI: https://breucke.com/wp-devs
+Author: Nehad Altimimi
+Author URI: https://environs.nehaddev.com/
+Description: This theme is for Event.
+Requires at least: 5.6
+Tested up to: 5.9
+Requires PHP: 8.0
+Version: 1.0
+License: GNU General Public License v2 or later
+Text Domain: bruecke
+Tags: one-column, custom-menu, custom-logo, featured-images, translation-ready
+*/
+
+
+
+
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+
+

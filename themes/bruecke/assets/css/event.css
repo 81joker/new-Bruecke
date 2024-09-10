@@ -1,0 +1,459 @@
+:root {
+    --primary-color: rgb(240, 55, 55); 
+    --secondary-color: rgb(174, 174, 174); 
+    --body-color: #212529; 
+    --white-color: #FFFFFF;
+  }
+/*
+---------------------------------------------
+upcoming meetings page
+---------------------------------------------
+*/
+
+section.meetings-page {
+  background-image: url(../images/meetings-page-bg.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 140px;
+  padding-bottom: 0px;
+}
+
+section.meetings-page .filters {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+section.meetings-page .filters li {
+  font-size: 13px;
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  padding: 11px 30px;
+  display: inline-block;
+  border-radius: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all .3s;
+  cursor: pointer;
+  margin: 0px 3px;
+}
+
+section.meetings-page .filters ul li.active,
+section.meetings-page .filters ul li:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+section.meetings-page .pagination {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+section.meetings-page .pagination ul li {
+  display: inline-block;
+}
+
+section.meetings-page .pagination ul li a {
+  width: 40px;
+  height: 40px;
+  background-color: var(--white-color);
+  border-radius: 10px;
+  color: #1f272b;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all .3s;
+}
+
+section.meetings-page .main-button-red {
+  text-align: center;
+}
+
+section.meetings-page .main-button-red a {
+  padding: 12px 60px;
+  text-align: center;
+}
+
+section.meetings-page .pagination ul li.active a,
+section.meetings-page .pagination ul li a:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.meeting-single-item .thumb {
+  position: relative;
+}
+
+.meeting-single-item .thumb img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.meeting-single-item .thumb .price {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.meeting-single-item .thumb .price span {
+  font-size: 16px;
+  color: #1f272b;
+  font-weight: 600;
+  background-color: rgba(250,250,250,0.9);
+  padding: 7px 12px;
+  border-radius: 10px;
+}
+
+.meeting-single-item .down-content {
+  background-color: var(--white-color);
+  padding: 40px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.meeting-single-item .thumb .date {
+  position: absolute;
+  background-color: rgba(250,250,250,0.9);
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  padding: 15px 0px;
+  border-radius: 10px;
+  right: 20px;
+  top: 20px;
+}
+
+.meeting-single-item .thumb .date h6 {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.meeting-single-item .thumb .date span {
+  display: block;
+  color: #1f272b;
+  font-size: 22px;
+  margin-top: 7px;
+}
+
+.meeting-single-item .down-content h4 {
+  font-size: 22px;
+  color: #1f272b;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.meeting-single-item .down-content h5 {
+  font-size: 18px;
+  color: #1f272b;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.meeting-single-item .down-content p {
+  color: #1f272b;
+  font-size: 14px;
+}
+
+.meeting-single-item .down-content p.description {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #eee;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.meeting-single-item .down-content .share {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #eee;
+}
+
+.meeting-single-item .down-content .share h5 {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.meeting-single-item .down-content .share ul li {
+  display: inline;
+}
+
+.meeting-single-item .down-content .share ul li a {
+  font-size: 14px;
+  color: #1f272b;
+  transition: all .3s;
+}
+
+.meeting-single-item .down-content .share ul li a:hover {
+  color: var(--secondary-color);
+}
+
+/* Meeting item column */
+.templatemo-item-col {
+	width: 31%;
+}
+
+@media (max-width: 992px) {
+	.templatemo-item-col {
+		width: 45%;
+	}
+}
+
+@media (max-width: 767px) {
+	.templatemo-item-col {
+		width: 100%;
+	}
+}
+
+/* 
+---------------------------------------------
+responsive
+--------------------------------------------- 
+*/
+
+@media (max-width: 1300px) {
+  .services .owl-nav .owl-next{
+    right: -30px;
+  }
+  .services .owl-nav .owl-prev{
+    left: -25px;
+  }
+  .our-courses .owl-nav .owl-next{
+    right: -30px;
+  }
+  .our-courses .owl-nav .owl-prev{
+    left: -25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .services .owl-nav .owl-next{
+    right: -70px;
+  }
+  .services .owl-nav .owl-prev{
+    left: -65px;
+  }
+  .our-courses .owl-nav .owl-next{
+    right: -70px;
+  }
+  .our-courses .owl-nav .owl-prev{
+    left: -65px;
+  }
+}
+
+@media (max-width: 1085px) {
+  .services .owl-nav .owl-next{
+    right: -30px;
+  }
+  .services .owl-nav .owl-prev{
+    left: -25px;
+  }
+  .our-courses .owl-nav .owl-next{
+    right: -30px;
+  }
+  .our-courses .owl-nav .owl-prev{
+    left: -25px;
+  }
+}
+
+@media (max-width: 1005px) {
+  .services .owl-nav .owl-next{
+    display: none;
+  }
+  .services .owl-nav .owl-prev{
+    display: none;
+  }
+  .our-courses .owl-nav .owl-next{
+    display: none;
+  }
+  .our-courses .owl-nav .owl-prev{
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .main-banner .caption {
+    top: 60%;
+  }
+
+  .main-banner .caption h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .main-banner .caption .main-button-red {
+    margin-top: 15px;
+  }
+
+  .services {
+    margin-top: 0;
+    /* margin-top: 60px; */
+    margin-bottom: 2rem;
+  }
+
+  section.upcoming-meetings {
+    padding-top: 400px;
+  }
+
+  section.upcoming-meetings .categories {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .accordions {
+    margin-left: 0px;
+  }
+
+  .new-students {
+    margin-top: 15px;
+  }
+
+  section.our-facts .video {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+
+  section.contact-us #contact {
+    margin-bottom: 30px;
+  }
+  
+
+}
+
+@media (max-width: 767px) {
+
+  .sub-header .left-content p {
+    display: none;
+  }
+
+  .sub-header .right-icons {
+    text-align: center;
+  }
+
+  .main-nav .nav .sub-menu {
+    display: none;
+  }
+
+  .header-area .main-nav .nav li ul.sub-menu li a {
+    color: #1f272b;
+  }
+
+  
+}
+
+
+/* 
+---------------------------------------------
+Breadcrumb
+--------------------------------------------- 
+*/
+
+.breadcrumb .breadcrumb-item > a{
+color: var(--white-color) !important;
+}
+.breadcrumb .breadcrumb-item > a:hover{
+color: var(--primary-color) !important;
+}
+
+.breadcrumb-item::before {
+color: var(--white-color) !important;
+padding-left: .5rem;
+}
+
+/* 
+---------------------------------------------
+Gallery
+--------------------------------------------- 
+*/
+/*** Gallery Start ***/
+.group-page {
+  background-image: url(../images/meetings-page-bg.jpg);
+  padding-top: 1.5rem;
+  text-align: center;
+}
+.wp-block-heading {
+  z-index: 333333;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.group-page   p:first-of-type {
+  color: var(--white-color);
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.wp-block-gallery.is-style-gallery {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.wp-block-gallery.is-style-gallery figure.wp-block-image:not(#individual-image) ,
+.wp-block-gallery.is-style-gallery .wp-block-image{
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.wp-block-gallery.is-style-gallery .wp-block-image img{
+  transition: 0.5s;
+}
+
+.wp-block-gallery.is-style-gallery .wp-block-image img:hover{
+  transform: scale(1.2);
+}
+
+.wp-block-gallery.is-style-gallery .wp-block-image  .wp-element-caption {
+    background: var(--white-color);
+    bottom: 15px;
+    color: var(--body-color);
+    height: 2.4705882353rem;
+    left: 0;
+    line-height: 1.15;
+    margin: 0;
+    padding: 1.6470588235rem .8823529412rem;   
+    position: absolute;
+    width: 90%;
+    z-index: 2;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    font-weight: bold; 
+    
+    align-items: center;
+    display: flex
+
+}
+
+
+section.gallery-page {
+  background-image: url(../images/meetings-page-bg.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding-top: 90px; */
+  padding-bottom: 0px;
+  color: var(--white-color);
+}
+
+.gallery .gallery-item {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/*** Gallery End ***/
