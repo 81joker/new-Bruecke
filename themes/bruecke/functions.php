@@ -43,7 +43,7 @@ function bruecke_config()
     );
 
     $args = array(
-        'height'    => 425,
+        'height'    => 320,
         'width'     => 1920
     );
     

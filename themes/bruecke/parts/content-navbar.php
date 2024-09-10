@@ -16,8 +16,9 @@
     <div class="row">
       <div class="col-lg-8 col-md-8">
         <ul class="info">
-          <li><i class="fa fa-envelope"></i> info@company.com</li>
-          <li><i class="fa fa-map"></i> Sunny Isles Beach, FL 33160</li>
+          <li><i class="fa fa-envelope"></i> info@brucke.com</li>
+          <li><i class="fa fa-map"></i> Längenfeldgasse 68\4\1, 1120 Wien
+          </li>
         </ul>
       </div>
       <div class="col-lg-4 col-md-4">
@@ -40,14 +41,14 @@
         <nav class="main-nav">
           <!-- ***** Logo Start ***** -->
           <a href="<?php echo esc_url(home_url()); ?>" class="logo">
-          <?php
-            if(function_exists('the_custom_logo')){
-              $custom_logo_id     = get_theme_mod( 'custom_logo' );
-              $logo = wp_get_attachment_image_src($custom_logo_id, 'full' );
+            <?php
+            if (function_exists('the_custom_logo')) {
+              $custom_logo_id     = get_theme_mod('custom_logo');
+              $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
             }
-          ?>
-          <img src="<?php echo $logo[0] ?>" class="img-fluid" alt="">
-            </a>
+            ?>
+            <img src="<?php echo $logo[0] ?>" class="img-fluid" alt="">
+          </a>
           <!-- ***** Logo End ***** -->
           <!-- ***** Menu Start ***** -->
           <ul class="nav">
