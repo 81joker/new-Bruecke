@@ -1,5 +1,5 @@
 <?php
-// require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/customizer.php';
 
 function breucke_load_scripts(){
 
