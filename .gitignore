@@ -3,6 +3,7 @@
 _bruecke copy/
 
 plugins/show-current-template/
+plugins/all-in-one-wp-migration/
 
 VillaAgency-1.0.0/
 
@@ -15,3 +16,5 @@ themes/__OLD__bruecke copy/
 .gitigonre/
 
 environs/
+ai1wm-backups/
+

@@ -50,7 +50,7 @@
               <a href="<?php echo esc_url(home_url()); ?>" <?php if (is_front_page()) echo 'class="active"'; ?>>Home</a>
             </li>
             <li><a href="<?php echo site_url('/uber-uns') ?>" <?php if (is_page('uber-uns') or wp_get_post_parent_id(0) == 16) echo 'class="active"' ?>>Über Uns</a></li>
-            <li class="scroll-to-section"><a href="<?php echo site_url('/services') ?>" <?php if (is_page('uber-uns') or wp_get_post_parent_id(0) == 16) echo 'class="active"' ?>">Services</a></li>
+            <li><a href="<?php echo site_url('/services') ?>" <?php if (is_page('services') or wp_get_post_parent_id(0) == 16) echo 'class="active"' ?>>Services</a></li>
             <li class="scroll-to-section"><a href="<?php echo get_post_type_archive_link('event'); ?>" <?php if (get_post_type() == 'event') echo 'class="active"' ?>>Events</a></li>
             <li class="scroll-to-section"><a href="<?php echo site_url('/kontakt') ?>" <?php if (is_page('kontakt') or wp_get_post_parent_id(0) == 86) echo 'class="active"' ?>>kontakt</a></li>
             <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>

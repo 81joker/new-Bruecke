@@ -65,7 +65,7 @@
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6  <?php echo $eventType  ?>">
           <div class="item">
 
-            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+            <a href="<?php  echo esc_url(the_permalink());?>" title="<?php the_title_attribute(); ?>">
               <?php if (has_post_thumbnail()) : ?>
                 <?php echo the_post_thumbnail(array(470, 215)); ?>
               <?php else: ?>
@@ -84,7 +84,7 @@
                 echo get_the_excerpt();
               } else {
                 echo wp_trim_words(get_the_content(), 25);
-              } ?> <a href="<?php the_permalink(); ?>" class="">Lessen weiter</a>
+              } ?> <a href="<?php  echo esc_url(the_permalink());?>" class="text-primary">Weiter Lessen</a>
             </p>
             <div class="main-button">
               <a href="property-details.html">Schedule a visit</a>

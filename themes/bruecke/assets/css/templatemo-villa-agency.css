@@ -47,6 +47,9 @@ figure, header, nav, section, article, aside, footer, figcaption {
   --body-color: #212529; 
   --white-color: #FFFFFF;
 }
+.text-primary{
+  color: var(--primary-color) !important;
+}
 .clearfix:after {
   content: ".";
   display: block;
