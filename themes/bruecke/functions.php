@@ -54,13 +54,13 @@ function bruecke_config()
         *
         * @link https://codex.wordpress.org/Theme_Logo
         */
-        add_theme_support( 'custom-logo', array(
-            'height'      => 100,
-            'width'       => 400,
-            'flex-height' => true,
-            'flex-width'  => true,
-            'header-text' => array( 'site-title', 'site-description' ),
-        ) );
+        // add_theme_support( 'custom-logo', array(
+        //     'height'      => 100,
+        //     'width'       => 400,
+        //     'flex-height' => true,
+        //     'flex-width'  => true,
+        //     'header-text' => array( 'site-title', 'site-description' ),
+        // ) );
     // add_theme_support( 'automatic-feed-links' );
     // add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ));
     // add_theme_support( 'title-tag' );

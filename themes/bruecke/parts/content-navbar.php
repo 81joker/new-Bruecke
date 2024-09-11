@@ -41,13 +41,7 @@
         <nav class="main-nav">
           <!-- ***** Logo Start ***** -->
           <a href="<?php echo esc_url(home_url()); ?>" class="logo">
-            <?php
-            if (function_exists('the_custom_logo')) {
-              $custom_logo_id     = get_theme_mod('custom_logo');
-              $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
-            }
-            ?>
-            <img src="<?php echo $logo[0] ?>" class="img-fluid" alt="">
+            <img src="<?php echo get_theme_file_uri('/logo-main.svg'); ?>" alt="Die Brücke des Frieden">
           </a>
           <!-- ***** Logo End ***** -->
           <!-- ***** Menu Start ***** -->
