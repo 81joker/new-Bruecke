@@ -104,8 +104,9 @@ ul {
   margin-bottom: 0px;
 }
 
-p {
-  font-size: 14px;
+p,li {
+  font-size: 1.15rem;
+  /* font-size: 14px; */
   line-height: 28px;
   color: #4a4a4a;
 }
@@ -1161,7 +1162,7 @@ Properties Style
 .properties .item {
   background-color: #fafafa;
   border-radius: 10px;
-  padding: 30px;
+  padding: 20px;
   margin-bottom: 30px;
 }
 
@@ -1349,7 +1350,7 @@ footer.footer-no-gap {
 }
 
 footer {
-  margin-top: 150px;
+  margin-top: 170px;
   background-color: #1e1e1e;
   min-height: 100px;
 }
@@ -1835,4 +1836,8 @@ body {
   .contact-page .section-heading {
     margin-right: 100px;
   }
+}
+
+.child-img > img{
+  height: 200px;
 }

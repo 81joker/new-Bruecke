@@ -14,6 +14,8 @@ function breucke_load_scripts(){
     wp_enqueue_style('bruecke-fontawesome', get_template_directory_uri() . '/assets/css/fontawesome.css');
     wp_enqueue_style('bruecke-templatemo', get_template_directory_uri() . '/assets/css/templatemo-villa-agency.css');
     wp_enqueue_style('bruecke-event', get_template_directory_uri() . '/assets/css/event.css');
+    wp_enqueue_style('bruecke-meta', get_template_directory_uri() . '/assets/css/meta-box.css');
+    wp_enqueue_style('bruecke-page-links', get_template_directory_uri() . '/assets/css/page-links.css');
     wp_enqueue_style('bruecke-owl', get_template_directory_uri() . '/assets/css/owl.css');
     wp_enqueue_style('bruecke-animate', get_template_directory_uri() . '/assets/css/animate.css');
     wp_enqueue_style('bruecke-swiper-bundl', "https://unpkg.com/swiper@7/swiper-bundle.min.css");
