@@ -1,11 +1,7 @@
 <?php
-
 get_header();
-
 while (have_posts()) {
   the_post(); ?>
-
-
   <div class="single-property section">
     <div class="container">
       <div class="row">
@@ -22,10 +18,10 @@ while (have_posts()) {
           </div>
           <div class="main-content">
             <span class="category">
-              <?php echo get_field('event_type');?>
+              <?php echo get_field('event_type'); ?>
             </span>
             <span class="category ms-2">
-            <?php
+              <?php
               if (get_field('event_date')) {
                 $eventDate =  get_field('event_date');
                 if ($eventDate) {
@@ -35,10 +31,8 @@ while (have_posts()) {
               }
               ?>
             </span>
-
             <h4><?php the_title() ?></h4>
- 
-            <?php the_content()?>
+            <?php the_content() ?>
           </div>
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -79,42 +73,14 @@ while (have_posts()) {
             </div>
           </div>
         </div>
-
-        <!-- <div class="col-lg-4">
-          <div class="info-table">
-            <ul>
-              <li>
-                <img src="<?php echo get_theme_file_uri('assets/images/info-icon-01.png" a') ?>" alt="" lt="" style="max-width: 52px;">
-                <h4>XXX</h4>
-              </li>
-              <li>
-                <img src="<?php echo get_theme_file_uri('assets/images/info-icon-02.png" a') ?>" alt="" lt="" style="max-width: 52px;">
-                <h4>Contract<br><span>Contract Ready</span></h4>
-              </li>
-              <li>
-                <img src="<?php echo get_theme_file_uri('assets/images/info-icon-03.png" a') ?>" alt="" lt="" style="max-width: 52px;">
-                <h4>Payment<br><span>Payment Process</span></h4>
-              </li>
-              <li>
-                <img src="<?php echo get_theme_file_uri('assets/images/info-icon-04.png" a') ?>" alt="" lt="" style="max-width: 52px;">
-                <h4>Safety<br><span>24/7 Under Control</span></h4>
-              </li>
-            </ul>
-          </div>
-        </div> -->
         <div class="col-lg-12 py-4">
-              <div class="main-button-red bg bg-danger p-2">
-                <a href="<?php echo get_post_type_archive_link('event') ?>">Back To Meetings List</a>
-              </div>
-            </div>
-
-
+          <div class="main-button">
+            <a href="<?php echo get_post_type_archive_link('event') ?>" class="px-5">Back To Meetings List</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-
-
 <?php
 }
 get_footer();
