@@ -1,10 +1,8 @@
 <?php get_header(); ?>
 <?php get_template_part('parts/content', 'hero');?>
 <div id="content" class="site-content">
-    <?php get_template_part('parts/content', 'event'); ?>
-
-    <?php include('static-page.php') ?>
-  <div class="container"> 
+    
+      <div class="container"> 
         <?php
         while (have_posts()) : the_post(); ?>
 
@@ -17,5 +15,10 @@
         endwhile;
         ?>
 </div>
+    
+    <?php get_template_part('parts/content', 'event'); ?>
+
+    <?php include('static-page.php') ?>
+
 </div>
 <?php get_footer(); ?>

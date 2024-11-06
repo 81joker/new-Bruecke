@@ -78,7 +78,6 @@
 
             <?php $eventDate = new DateTime(get_field('event_date')); ?>
             <h6><?php echo $eventDate->format('M'); ?> <span><?php echo $eventDate->format('d') ?></span></h6>
-            <!-- <h4><a href="property-details.html">18 Old Street Miami, OR 97219</a></h4> -->
             <p class="py-3 lh-base">
               <?php if (has_excerpt()) {
                 echo get_the_excerpt();
@@ -86,9 +85,11 @@
                 echo wp_trim_words(get_the_content(), 25);
               } ?> <a href="<?php  echo esc_url(the_permalink());?>" class="text-primary">Weiter Lessen</a>
             </p>
+            <!--
             <div class="main-button">
               <a href="property-details.html">Schedule a visit</a>
             </div>
+            -->
           </div>
         </div>
         <?php $loop_counter++; ?>

@@ -1,0 +1,16 @@
+/* Override wp-block-gallery styles */
+/* .wp-block-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.wp-block-gallery .blocks-gallery-item {
+    width: 100%;
+    margin: 0;
+}
+
+.wp-block-gallery .blocks-gallery-item img {
+    width: 100%;
+    height: auto;
+} */
